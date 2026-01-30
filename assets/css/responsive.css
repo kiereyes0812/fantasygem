@@ -1,0 +1,34 @@
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .phone-box {
+    order: -1;
+  }
+  .h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand {
+    min-width: unset;
+  }
+  .brand .logo {
+    width: 78px;
+  }
+  .header-cta .btn {
+    padding: 0 12px;
+  }
+  .panel-inner {
+    padding: 16px;
+  }
+}
