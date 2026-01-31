@@ -32,3 +32,33 @@
     padding: 16px;
   }
 }
+
+@media (max-width: 900px){
+  .h1{ font-size: 34px; }
+  .section-title{ font-size: 24px; }
+  .section-subtitle, .step-title{ font-size: 18px; }
+  .lead{ font-size: 16px; }
+  .p, .step-text, li{ font-size: 15px; }
+  .step,
+  .step:nth-child(even){
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .step .step-media img{
+    max-width: 260px;
+  }
+  .hero{
+    padding: 34px 0 22px;
+  }
+  .hero-feature{
+    width: min(240px, 76%);
+  }
+}
+
+@media (max-width: 520px){
+  .hero-actions .btn{ width: 100%; }
+  .header-inner{ height: 70px; }
+  .brand .logo img{ height: 30px; }
+  .panel-inner{ padding: 18px; }
+}
+

@@ -11,3 +11,23 @@
     btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
   });
 })();
+
+
+/* Smooth scroll with fixed header offset */
+(function () {
+  const headerOffset = 8 + 72; // top strip + header
+
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const id = a.getAttribute("href");
+      if (!id || id === "#") return;
+
+      const el = document.querySelector(id);
+      if (!el) return;
+
+      e.preventDefault();
+      const y = el.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    });
+  });
+})();

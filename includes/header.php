@@ -35,7 +35,7 @@
   $ORG_NAME = 'Fantasy Gems';
   $SITE_NAME = 'Fantasy Gems Game';
   $EMAIL = 'Info@fantasygems.pakistanforces.com';
-  $OG_IMAGE = $BASE_URL . '/assets/img/og-image.png';
+  $OG_IMAGE = $BASE_URL . '/assets/img/Fantasy-Gems-Logo-2.webp';
 
   $orgId = rtrim($BASE_URL, '/') . '#organization';
   $websiteId = rtrim($BASE_URL, '/') . '#website';
@@ -68,7 +68,7 @@
       'email' => $EMAIL,
       'logo' => [
         '@type' => 'ImageObject',
-        'url' => $BASE_URL . '/assets/img/logo.png'
+        'url' => $BASE_URL . '/assets/img/Fantasy-Gems-Game-Logo.webp'
       ]
     ],
     [
@@ -144,14 +144,11 @@
     <div class="container">
       <div class="header-inner">
         <div class="brand">
-          <a class="logo" href="<?php echo $BASE_URL; ?>/Fantasy-Gems-Game-Logo.webp"></a>
+          <a class="logo" href="<?php echo $BASE_URL; ?>/"><img src="<?php echo $BASE_URL; ?>/assets/img/Fantasy-Gems-Game-Logo.webp" alt="Fantasy Gems Game Logo" loading="eager" /></a>
         </div>
 
         <nav class="nav" aria-label="Primary">
-          <a href="<?php echo $BASE_URL; ?>/"
-             class="<?php echo $ACTIVE_PAGE === 'home' ? 'active' : ''; ?>">Home</a>
-
-          <a href="<?php echo $BASE_URL; ?>/about-us/"
+<a href="<?php echo $BASE_URL; ?>/about-us/"
              class="<?php echo $ACTIVE_PAGE === 'about' ? 'active' : ''; ?>">About Us</a>
 
           <a href="<?php echo $BASE_URL; ?>/responsible-gaming/"
@@ -188,8 +185,7 @@
 
       <div class="mobile-drawer" data-mobile-drawer data-open="0">
         <div class="drawer-inner">
-          <a href="<?php echo $BASE_URL; ?>/">Home</a>
-          <a href="<?php echo $BASE_URL; ?>/about-us/">About Us</a>
+<a href="<?php echo $BASE_URL; ?>/about-us/">About Us</a>
           <a href="<?php echo $BASE_URL; ?>/responsible-gaming/">Responsible Gaming</a>
           <a href="<?php echo $BASE_URL; ?>/privacy-policy/">Privacy Policy</a>
           <a href="<?php echo $BASE_URL; ?>/terms-conditions/">Terms &amp; Conditions</a>
